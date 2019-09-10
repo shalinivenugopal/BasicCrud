@@ -52,7 +52,8 @@ CREATE TABLE `form` (
   `mobile` int(10) NOT NULL,
   `dob` int(10) NOT NULL,
   `description` varchar(100) COLLATE utf8mb4_unicode_520_ci NOT NULL,
-  `gender` varchar(10) COLLATE utf8mb4_unicode_520_ci NOT NULL
+  `gender` varchar(10) COLLATE utf8mb4_unicode_520_ci NOT NULL,
+  `profile_image` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
 --

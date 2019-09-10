@@ -43,9 +43,9 @@
 						<td>
 							<a  href="../views/update.php?edit=<?php echo $data['id']; ?> ">Edit</a>
 						</td>
-						<!-- <td>
-							<a   href="server.php?del=<?php echo $row['id'] ?>">Delete</a>
-						</td> -->
+						 <td>
+							<a   href="../controller/DeleteController.php?delete=<?php echo $data['id']; ?>">Delete</a>
+						</td> 
 					</tr>
 				<?php	} ?>
 

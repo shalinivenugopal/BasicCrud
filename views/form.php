@@ -18,7 +18,7 @@
 
 <div class="container">
   <h2>Form</h2>
-  <form action="../controller/FormController.php" method="POST">
+  <form action="../controller/FormController.php" method="POST" enctype="multipart/form-data">
     <div class="form-group">
       <label for="name">Name:</label>
       <input type="text" class="form-control" id="email" placeholder="Enter name" name="name">
@@ -39,6 +39,10 @@
         <label>Gender</label><br>
         <label><input type="radio" name="gender" value="male">Male</label>&emsp;
         <label><input type="radio" name="gender" value="female">Female</label>    
+     </div>
+     <div class="form-group">
+        <label for="upload">Profile Image</label>
+        <input type="file" name="profile_image">
      </div>
    
     <button type="submit" class="btn btn-primary">Submit</button>

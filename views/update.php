@@ -22,7 +22,7 @@
 
 <div class="container">
   <h2>Update Page</h2>
-  <form action="../controller/UpdateController.php" method="POST">
+  <form action="../controller/UpdateController.php?id=<?php echo $data['id'] ?>" method="POST">
     <div class="form-group">
       <label for="name">Name:</label>
       <input type="text" class="form-control" id="email" placeholder="Enter name" name="name" value="<?php echo $data['name'] ?>">
