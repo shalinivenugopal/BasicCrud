@@ -15,15 +15,15 @@ session_start();
     $target_file = "../uploads/" . $file_name;
     move_uploaded_file($_FILES["profile_image"]["tmp_name"], $target_file);
   
-  echo $sql = "INSERT INTO form (name,mobile,dob,description,gender,profile_image) VALUES ('$name', '$mobile', '$dob', '$description', '$gender', '$profile_image')";
+  $sql = "INSERT INTO form (name,mobile,dob,description,gender,profile_image) VALUES ('$name', '$mobile', '$dob', '$description', '$gender', '$file_name')";
 
-}
+  }
 
-mysqli_query($conn,$sql)
+// mysqli_query($conn,$sql)
 
-  // if(mysqli_query($conn,$sql)){
-  //   header('location:../views/form.php?status=success');
-  // }else{
-  //   header('location:../views/form.php?status=error');
-  // }
+  if(mysqli_query($conn,$sql)){
+    header('location:../views/form.php?status=success');
+  }else{
+    header('location:../views/form.php?status=error');
+  }
 ?>

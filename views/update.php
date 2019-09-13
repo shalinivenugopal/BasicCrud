@@ -44,6 +44,10 @@
         <label><input type="radio" name="gender" value="male" <?php if($data['gender'] == 'male'){echo 'checked';} ?> >Male</label>&emsp;
         <label><input type="radio" name="gender" value="female" <?php if($data['gender'] == 'female'){echo 'checked';} ?> >Female</label>    
      </div>
+     <div class="form-group">
+        <label for="upload">Profile Image</label>
+        <input type="file" name="profile_image" >
+     </div>
    
     <button type="submit" class="btn btn-primary">Update</button>
   </form>

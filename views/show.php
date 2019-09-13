@@ -22,6 +22,8 @@
 					<th>DOB</th>
 					<th>Description</th>
 					<th>Gender</th>
+				    <th>Image</th>
+
 
 					<!-- <th colspan ="2">Action</th> -->
 				</tr>
@@ -39,6 +41,8 @@
 						<td><?php echo $data['dob'] ?></td>
 						<td><?php echo $data['description'] ?></td>
 						<td><?php echo $data['gender'] ?></td>
+						<td><?php echo '<img src="../uploads/'.$data['profile_image'].'" class="img-circle" style="width:70px">'; ?></td>
+
 
 						<td>
 							<a  href="../views/update.php?edit=<?php echo $data['id']; ?> ">Edit</a>
