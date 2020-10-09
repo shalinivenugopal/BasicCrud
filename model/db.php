@@ -1,8 +1,7 @@
 <?php 
-
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "PhpPro";
-$conn = mysqli_connect('localhost', 'root', '', 'PhpPro');
+	$servername = "localhost";
+	$username = "root";
+	$password = "root";
+	$dbname = "sha";
+	$conn = mysqli_connect($servername, $username, $password, $dbname);
  ?>
