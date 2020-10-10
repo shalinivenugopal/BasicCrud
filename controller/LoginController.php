@@ -1,6 +1,6 @@
 <?php 
-include_once '../model/db.php';
-session_start();
+	include_once '../model/db.php';
+	session_start();
 	$email = $_POST['email'];
 	$password = md5($_POST['password']);
 	$sql="SELECT * FROM datas WHERE email='$email' and password='$password'";
@@ -13,7 +13,7 @@ session_start();
 		$id = $data['id'];
 		$sql="UPDATE datas SET user_status ='1' where id='$id'";
 		$result = mysqli_query($conn,$sql);
-		//header('location:../views/home.php');
+		header('location:../views/show.php');
 	}else{
 		header('location:../views/login.php?status=error');
 	}
